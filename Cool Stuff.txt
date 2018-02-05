@@ -5,5 +5,10 @@
 --container >> row >> col
 -borders
 *jQuery
--hide()
+-hide()/show()
+-.on('click',function(){})
 -fadeIn()
+-Selectors: $('.example-class')
+--$(this) escoge elemento seleccionado
+--.next(): Escoge el siguiente element en el html
+-slideToggle()
