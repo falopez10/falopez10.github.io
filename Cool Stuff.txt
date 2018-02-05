@@ -1,0 +1,9 @@
+*htmml
+*css
+*bootstrap
+-Grids
+--container >> row >> col
+-borders
+*jQuery
+-hide()
+-fadeIn()
