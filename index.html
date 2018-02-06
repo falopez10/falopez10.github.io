@@ -2,113 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WebDev Tweets</title>
+  <title>Fabio López</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--estilos personalizados-->
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-
-  
+  <!--Todos los links que no especifiquen se abren en nueva pestaña--> 
+  <base target="_blank"> 
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
+    <h1 class="text-center">Fabio López </h1>
+    <img src="./images/FabioLopezPP.jpeg" alt="Sexy foto de Fabio" class="img-fluid rounded-circle mx-auto d-block border border-success" />
     <div class="row">
-      <div class="col-sm-8">
-        <h1>Tweets WebDev 2018-01 <small>by John</small></h1>
-        <p>Here are last week's tweets for the class</p>
+      <div class="habilidades col-sm col-centered">
+        <h2 class="text-center">Habilidades</h2>
+        <h4 >Lenguajes de programación</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Python</li>
+          <li>java</li>
+          <li>SQL</li>
+        </ul>
+        <h4>Experiencia</h4>
+        <ul>
+          <li>T.I. intern at Alpina productos alimenticios <!-- imagen de alpina :) --></li>
+          <li>Monitor académico <a href="https://profesores.virtual.uniandes.edu.co/~isis1104/dokuwiki/doku.php">Matemática Estructural y lógica</a></li>
+          <li>Monitor académico <a href="https://cupi2.virtual.uniandes.edu.co/apo-2">Algorítimica y Programación Orientada a Objetos 2 </a></li>
+          <li>Monitor académico <a href="https://cursos.virtual.uniandes.edu.co/isis1206/">Estructuras de Datos</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="row">
-      <!-- cada div es un tweet-->
-      <div class="tweet col-sm-6 col-lg-4">
-        <div class="row">
-          <!--columna de foto-->
-          <div class="col-sm-3 col-lg-2">
-            <div class="photo"><img src="http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" class="rounded-circle" alt="NicolasCabrer photo" ></div>
-          </div>
-          <!--columna de texto..-->
-          <div class="col-sm col-lg">
-            <span>
-              <div class="name">NicolasCabrer</div>
-            </span>
-            <div class="date">Tue Jan 30 23:33:28 +0000 2018</div>
-            <div class="text">Bootstrap's grid is a useful tool because it lets you organize html elements quickly and reliably. Another characte… https://t.co/mjqsrTNEpD</div>
-          </div>
-        </div>
-      </div>
-      <!-- cada div es un tweet-->
-      <div class="tweet col-sm-6 col-lg-4">
-        <div class="row">
-          <!--columna de foto-->
-          <div class="col-sm-3 col-lg-2">
-            <div class="photo"><img src="http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" class="rounded-circle" alt="NicolasCabrer photo" ></div>
-          </div>
-          <!--columna de texto..-->
-          <div class="col-sm col-lg">
-            <span>
-              <div class="name">NicolasCabrer</div>
-            </span>
-            <div class="date">Tue Jan 30 23:33:28 +0000 2018</div>
-            <div class="text">Bootstrap's grid is a useful tool because it lets you organize html elements quickly and reliably. Another characte… https://t.co/mjqsrTNEpD</div>
-          </div>
-        </div>
-      </div>
-      <!-- cada div es un tweet-->
-      <div class="tweet col-sm-6 col-lg-4">
-        <div class="row">
-          <!--columna de foto-->
-          <div class="col-sm-3 col-lg-2">
-            <div class="photo"><img src="http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" class="rounded-circle" alt="NicolasCabrer photo" ></div>
-          </div>
-          <!--columna de texto..-->
-          <div class="col-sm col-lg">
-            <span>
-              <div class="name">NicolasCabrer</div>
-            </span>
-            <div class="date">Tue Jan 30 23:33:28 +0000 2018</div>
-            <div class="text">Bootstrap's grid is a useful tool because it lets you organize html elements quickly and reliably. Another characte… https://t.co/mjqsrTNEpD</div>
-          </div>
-        </div>
-      </div>
-      <!-- cada div es un tweet-->
-      <div class="tweet col-sm-6 col-lg-4">
-        <div class="row">
-          <!--columna de foto-->
-          <div class="col-sm-3 col-lg-2">
-            <div class="photo"><img src="http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" class="rounded-circle" alt="NicolasCabrer photo" ></div>
-          </div>
-          <!--columna de texto..-->
-          <div class="col-sm col-lg">
-            <span>
-              <div class="name">NicolasCabrer</div>
-            </span>
-            <div class="date">Tue Jan 30 23:33:28 +0000 2018</div>
-            <div class="text">Bootstrap's grid is a useful tool because it lets you organize html elements quickly and reliably. Another characte… https://t.co/mjqsrTNEpD</div>
-          </div>
-        </div>
-      </div>
-      <!-- cada div es un tweet-->
-      <div class="tweet col-sm-6 col-lg-4">
-        <div class="row">
-          <!--columna de foto-->
-          <div class="col-sm-3 col-lg-2">
-            <div class="photo"><img src="http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" class="rounded-circle" alt="NicolasCabrer photo" ></div>
-          </div>
-          <!--columna de texto..-->
-          <div class="col-sm col-lg">
-            <span>
-              <div class="name">NicolasCabrer</div>
-            </span>
-            <div class="date">Tue Jan 30 23:33:28 +0000 2018</div>
-            <div class="text">Bootstrap's grid is a useful tool because it lets you organize html elements quickly and reliably. Another characte… https://t.co/mjqsrTNEpD</div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
 
+      <div class="projects col col-centered">
+        <h2 class="text-center">Proyectos</h2>
+      </div>
+    </div>
+
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
