@@ -2,7 +2,8 @@
 
 ## Autor
 
-Fabio Andrés López Corredor. Código 201423782 
+Fabio Andrés López Corredor. Código 201423782.
+
 Estudiante de ingeniería de Sistemas y Computación de la Universidad de Los Andes
 
 ## Descripción del proyecto
@@ -24,8 +25,8 @@ Para observar los resultados del proyecto ingresar a la [página web del proyect
 
 * Bootstrap: Página se basa en templates proveídos de la página de [bootstrap](https://getbootstrap.com/), y utiliza las clases incluidas en el CDN para personal aspectos visuales.
 
-* javascript:
+* javascript: Sobre este lenguaje se basan las múltiples animaciones interactivas.
 
-* jQuery
+* jQuery: Se usa para hacer referencia a los elementos del DOM de forma más sencilla.
 
 * gh-pages: Aplicación se despliega en un servidor público brindado por github pages.
