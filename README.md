@@ -30,3 +30,5 @@ Para observar los resultados del proyecto ingresar a la [página web del proyect
 * jQuery: Se usa para hacer referencia a los elementos del DOM de forma más sencilla.
 
 * gh-pages: Aplicación se despliega en un servidor público brindado por github pages.
+
+* web-gl: lenguaje usado para interactuar con API de motor gráfico. permite visualización interactiva de objeto 3D 
