@@ -1,11 +1,12 @@
 function main(){
-	$(".skill-list").hide();
-	$(".skill-type").on("click", function() {
-		$(this).next().slideToggle(400);
-		// $(this).next().slideToggle(400);
-		// $(this).toggleClass('active');
-	}
+	$("#lenguaje-escogido").hide();
+	$("#habilidades > div > ul.list-inline.list-icons > .list-inline-item")
+	.hover(function(){
+		$("#lenguaje-escogido").slideToggle(400);
+	}, function(){
+	$("#lenguaje-escogido").hide();
+		
+	});
 
-	);
 }
 $(document).ready(main);
