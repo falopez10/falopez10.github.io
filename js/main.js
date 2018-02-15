@@ -16,9 +16,11 @@ function main(){
 
 //funcion que juega con el texto en "sobre mi"
 function sobreMiDinamico(){
-	$(".fa-codepen").hover(function(){
-		$(this).animate({right: '250px'});
-	});
+	$("#about > .my-auto > p.mb-5").hover(function(){
+    $(this).css("font-weight","Bold");
+  }, function(){
+    $(this).css("font-weight","Normal");
+  });
 }
 //funcion que muestra el lenguaje en "habilidades"
 function lenguajeEscogido(){
