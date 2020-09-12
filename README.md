@@ -1,34 +1,40 @@
 # falopez10.github.io
 
-## Autor
+## Author
 
-Fabio Andrés López Corredor. Código 201423782.
+Fabio Andrés López Corredor.
 
-Estudiante de ingeniería de Sistemas y Computación de la Universidad de Los Andes
+This is my personal web page. It includes my previous experiences, projects and hobbies.
 
-## Descripción del proyecto
+## Let me see it!
 
-Página web personal. La página funciona a modo de _resume_, e incluye mis experiencias, estudios, habilidades, 
-intereses y los proyectos en los que estoy trabajando.
+Just [go to my website](https://falopez10.github.io/)
 
-Se trata de una página web estática, que funciona como File Server con animaciones dinámicas implementadas con javascript.
+## Technologies used
 
-## Cómo visualizar
+* **[React](https://reactjs.org/)**: My favorite javascript framework so far. I used create-react-app just to get the basis folder structure.
+* **[Typescript](https://www.typescriptlang.org/)**: Really simple to use and to learn either if you know JS or not.
+* **[Material-ui](https://material-ui.com/)**: As I love tweaking my apps with CSS and native resources, I recomend this highly-customizable library to save time developing react apps.
+* **CSS**: Along with [SASS](https://sass-lang.com/) and [jss](https://cssinjs.org/), I believe the language used for styling will keep being the standard in web development.
+* **[webpack](https://webpack.js.org/)**: I configured webpack from scratch to generate the static web files needed. create-react-app is a good option but for experimented web developers I recommend using webpack to get a better understanding of how everything is bundled.
+* **gh-pages**: Currently I serve the webpage on github pages.
 
-Para observar los resultados del proyecto ingresar a la [página web del proyecto](https://falopez10.github.io/)
+## Initial setup
 
-## Tecnologías usadas
+### template from create-react-app
 
-* HTML: Estructura básica de la página.
+npx create-react-app ./ --template cra-template-typescript
 
-* CSS: Estilos personalizados. Se incluyen paquetes "font-awesome", "devicons" y "simple-line-icons" para agregar imagenes útiles.
+npm uninstall react-scripts
 
-* Bootstrap: Página se basa en templates proveídos de la página de [bootstrap](https://getbootstrap.com/), y utiliza las clases incluidas en el CDN para personal aspectos visuales.
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 
-* javascript: Sobre este lenguaje se basan las múltiples animaciones interactivas.
+### dev dependencies
 
-* jQuery: Se usa para hacer referencia a los elementos del DOM de forma más sencilla.
+npm install -D webpack webpack-cli
 
-* gh-pages: Aplicación se despliega en un servidor público brindado por github pages.
+npm install -D webpack-dev-server html-webpack-plugin html-loader style-loader css-loader ts-loader inline-source-map file-loader tslint tslint-loader copy-webpack-plugin
 
-* web-gl: lenguaje usado para interactuar con API de motor gráfico. permite visualización interactiva de objeto 3D 
+npm install -D babel-loader @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/plugin-transform-runtime @babel/runtime
+
+*Made by Fabio. From Colombia, for the 🌍*
