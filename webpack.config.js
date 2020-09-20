@@ -52,7 +52,11 @@ module.exports = {
     new CopyWebPackPlugin({
       patterns: [{
         from: 'public',
-        to: './'
+        globOptions: {
+          ignore: [
+            '**/index.html'
+          ]
+        }
       }]
     }),
     new webpack.EnvironmentPlugin({
