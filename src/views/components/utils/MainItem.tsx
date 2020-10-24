@@ -5,18 +5,19 @@ interface Props {
     title: string;
 }
 
-export const MainItem: FC<Props> = ({ title }) => {
+export const MainItem: FC<Props> = ({ title, children }) => {
     const classes = useStyles();
     return (
 
         <Accordion>
             <AccordionSummary classes={{
                 root: classes.summary,
+                expanded: classes.summary,
             }}>
                 <h3>{title}</h3>
             </AccordionSummary>
             <AccordionDetails>
-                <p>Content</p>
+                {children}
             </AccordionDetails>
 
         </Accordion>
