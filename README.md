@@ -1,40 +1,25 @@
-# falopez10.github.io
+# New Project
 
-## Author
+> ✨ Bootstrapped with Create Snowpack App (CSA).
 
-Fabio Andrés López Corredor.
+## Available Scripts
 
-This is my personal web page. It includes my previous experiences, projects and hobbies.
+### npm start
 
-## Let me see it!
+Runs the app in the development mode.
+Open http://localhost:8080 to view it in the browser.
 
-Just [go to my website](https://falopez10.github.io/)
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-## Technologies used
+### npm run build
 
-* **[React](https://reactjs.org/)**: My favorite javascript framework so far. I used create-react-app just to get the basis folder structure.
-* **[Typescript](https://www.typescriptlang.org/)**: Really simple to use and to learn either if you know JS or not.
-* **[Material-ui](https://material-ui.com/)**: As I love tweaking my apps with CSS and native resources, I recomend this highly-customizable library to save time developing react apps.
-* **CSS**: Along with [SASS](https://sass-lang.com/) and [jss](https://cssinjs.org/), I believe the language used for styling will keep being the standard in web development.
-* **[webpack](https://webpack.js.org/)**: I configured webpack from scratch to generate the static web files needed. create-react-app is a good option but for experimented web developers I recommend using webpack to get a better understanding of how everything is bundled.
-* **gh-pages**: Currently I serve the webpage on github pages.
+Builds a static copy of your site to the `build/` folder.
+Your app is ready to be deployed!
 
-## Initial setup
+**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" to your `snowpack.config.js` config file.
 
-### template from create-react-app
+### npm test
 
-npx create-react-app ./ --template cra-template-typescript
-
-npm uninstall react-scripts
-
-npm install --save typescript @types/node @types/react @types/react-dom @types/jest
-
-### dev dependencies
-
-npm install -D webpack webpack-cli
-
-npm install -D webpack-dev-server html-webpack-plugin html-loader style-loader css-loader ts-loader inline-source-map file-loader tslint tslint-loader copy-webpack-plugin
-
-npm install -D babel-loader @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/plugin-transform-runtime @babel/runtime
-
-*Made by Fabio. From Colombia, for the 🌍*
+Launches the application test runner.
+Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
