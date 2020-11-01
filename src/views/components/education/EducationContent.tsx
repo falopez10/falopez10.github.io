@@ -1,5 +1,5 @@
 import { createStyles, Grid, makeStyles } from '@material-ui/core';
-import React, { FC, useContext, useEffect, useState } from 'react'
+import { FC, useContext, useEffect, useState } from 'react';
 import { labels } from '../../../constants';
 import { DisplayContext } from '../../../core/providers';
 import { formatMonthCustom } from '../../../core/services';

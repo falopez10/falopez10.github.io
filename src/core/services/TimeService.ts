@@ -2,7 +2,7 @@ import { Language, TimeFormat, dateFNSLocale } from "../models";
 import { format, isSameDay } from "date-fns";
 import { labels } from "../../constants";
 
-export function formatTime(date: Date | number, time: boolean = true, onlyTime: boolean = false) {
+export function formatTime(date: Date | number, time = true, onlyTime = false) {
     const _format = time ?
         (
             onlyTime ?
@@ -25,4 +25,4 @@ export function formatMonthCustom(date: Date | number, language: Language): stri
         { locale: dateFNSLocale[language], }
     );
 
-};
+}

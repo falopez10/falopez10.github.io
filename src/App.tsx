@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { DisplayWrapper } from './views/components';
 import { Main } from './views/pages/Main';

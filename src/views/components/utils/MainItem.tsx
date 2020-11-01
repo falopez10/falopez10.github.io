@@ -1,5 +1,5 @@
 import { Accordion, AccordionDetails, AccordionSummary, createStyles, makeStyles } from '@material-ui/core'
-import React, { FC } from 'react'
+import { FC } from 'react';
 
 interface Props {
     title: string;
