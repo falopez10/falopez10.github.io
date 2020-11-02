@@ -4,6 +4,7 @@ import { labels } from '../../constants';
 import { DisplayContext } from '../../core/providers/DisplayContext';
 import { ExperienceContent, MainItem, SkillsContent } from '../components';
 import { EducationContent } from '../components/education/EducationContent';
+import { InterestsContent } from '../components/interests/InterestsContent';
 export const Main: FC = () => {
   const { language } = useContext(DisplayContext);
   return (
@@ -18,7 +19,9 @@ export const Main: FC = () => {
       <MainItem title={labels[language].SKILLS}>
         <SkillsContent />
       </MainItem>
-      <MainItem title={labels[language].INTERESTS} />
+      <MainItem title={labels[language].INTERESTS}>
+        <InterestsContent />
+      </MainItem>
       <MainItem title={labels[language].PROJECTS} />
     </Grid>
   );

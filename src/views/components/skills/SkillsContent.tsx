@@ -1,8 +1,7 @@
 import { Grid, LinearProgress } from '@material-ui/core';
-import React, { FC, useContext } from 'react';
-import { FaReact, FaAngular, FaNodeJs, FaJs, FaJava, FaPython } from 'react-icons/fa';
-import { SiFlutter } from 'react-icons/si'
-import { DisplayContext } from '../../../core/providers/DisplayContext';
+import React, { FC } from 'react';
+import { FaAngular, FaJava, FaJs, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
+import { SiFlutter } from 'react-icons/si';
 const skills = [
   { name: 'React', value: 70, Icon: FaReact, color: "#48CEF7", },
   { name: 'Angular', value: 60, Icon: FaAngular, color: "#C3002F", },
@@ -14,7 +13,6 @@ const skills = [
 ];
 
 export const SkillsContent: FC = () => {
-  const { xs } = useContext(DisplayContext);
 
   return (
     <Grid container alignItems="center">

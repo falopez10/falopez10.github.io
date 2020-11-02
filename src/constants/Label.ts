@@ -36,6 +36,12 @@ interface LabelMap {
   PROJECTS: string;
 
   INTERESTS: string;
+  MUSIC_TITLE: string;
+  MUSIC_DESCRIPTION: string;
+  PUZZLES_TITLE: string;
+  PUZZLES_DESCRIPTION: string;
+  BASKETBALL_TITLE: string;
+  BASKETBALL_DESCRIPTION: string;
 }
 
 const intlLabels = {
@@ -88,7 +94,14 @@ export const labels: Record<Language, LabelMap> = {
 
     SKILLS: 'Skills',
     PROJECTS: 'Projects',
+
     INTERESTS: 'Interests',
+    MUSIC_TITLE: 'Making music',
+    MUSIC_DESCRIPTION: 'Someone made the mistake to tell me how to mix and produce music in tools like Ableton. Since then I have made hilarious mixes and songs. They all are made with love.',
+    PUZZLES_TITLE: 'Solving puzzles',
+    PUZZLES_DESCRIPTION: 'I\'m not much of a gamer, but I do use to search for solving logic puzzles and riddles! ',
+    BASKETBALL_TITLE: 'Playing Basketball',
+    BASKETBALL_DESCRIPTION: 'In Colombia and in my family it\'s always weird being one of the few who doesn\'t really like football(soccer). I love watching the NBA and spending time failing hoops.',
   },
   [Language.ES]: {
     ...intlLabels,
@@ -123,12 +136,19 @@ export const labels: Record<Language, LabelMap> = {
 
     EDUCATION: 'Educación',
     COLLEGE_DEGREE: 'Profesional',
-    SYSTEMS_ENGINEERING_DESCRIPTION: `Ingeniería de Sistemas y Computación
+    SYSTEMS_ENGINEERING_DESCRIPTION: `Ingeniería de Sistemas y Computación.
         PGA: 4.16`,
     HIGH_SCHOOL_DEGREE: '',
 
     SKILLS: 'Habilidades',
-    INTERESTS: 'Intereses',
     PROJECTS: 'Proyectos',
+
+    INTERESTS: 'Intereses',
+    MUSIC_TITLE: 'Hacer música',
+    MUSIC_DESCRIPTION: 'Alguien cometió el error de  enseñarme a mezclar y crear música en programas como ableton. Desde entonces me he dedicado a hacer mezclas y canciones muy graciosas. Eso sí, todas hechas con amor.',
+    PUZZLES_TITLE: 'Resolver acertijos',
+    PUZZLES_DESCRIPTION: 'En lugar de jugar muchos videojuegos, me interesa más resolver acertíjos y rompecabezas de lógica.',
+    BASKETBALL_TITLE: 'Baloncesto',
+    BASKETBALL_DESCRIPTION: 'En Colombia (y en mi familia) no es usual ser de los que no les gusta mucho el fútbol. Me encanta ver la NBA y pasar el tiempo fallando canastas.',
   },
 };

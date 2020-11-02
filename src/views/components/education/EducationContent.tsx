@@ -50,14 +50,13 @@ export const EducationContent: FC = () => {
         >
           <div>
             <Grid container justify="space-between">
-              <h3>{place}</h3>
+              <h3>{place} {title && <span className={classes.title}>({title})</span>}</h3>
               <h4 className={classes.date}>
                 {formatMonthCustom(endDate, language)}
               </h4>
             </Grid>
-            <h4 className={classes.title}>{title}</h4>
           </div>
-          {description && <p>{description}</p>}
+          {description && description.split('\n').map(str => <p>{str}</p>)}
         </Grid>
       ))}
     </div>
@@ -66,9 +65,9 @@ export const EducationContent: FC = () => {
 
 const useStyles = makeStyles((theme) =>
   createStyles({
-    root: { width: '100%' },
-    itemContainer: { margin: theme.spacing(1, 0) },
-    title: { textTransform: 'uppercase' },
+    root: { width: '100%', maxWidth: 600 },
+    itemContainer: { margin: theme.spacing(1, 0), textAlign: "left" },
+    title: { textTransform: 'uppercase', fontSize: "0.8rem", fontWeight: "normal" },
     date: { fontStyle: 'italic', color: theme.palette.secondary.main },
   }),
 );
