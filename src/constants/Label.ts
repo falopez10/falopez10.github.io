@@ -123,7 +123,7 @@ export const labels: Record<Language, LabelMap> = {
 
     EDUCATION: 'Educación',
     COLLEGE_DEGREE: 'Profesional',
-    SYSTEMS_ENGINEERING_DESCRIPTION: `Ingeniería de SIstemas y Computación
+    SYSTEMS_ENGINEERING_DESCRIPTION: `Ingeniería de Sistemas y Computación
         PGA: 4.16`,
     HIGH_SCHOOL_DEGREE: '',
 

@@ -1,25 +1,35 @@
-# New Project
+# falopez10.github.io
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+## Author
 
-## Available Scripts
+Fabio Andrés López Corredor.
 
-### npm start
+This is my personal web page. It includes my previous experiences, projects and hobbies.
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+## Let me see it!
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+Just [go to my website](https://falopez10.github.io/)
 
-### npm run build
+## Technologies used
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+* **[React](https://reactjs.org/)**: My favorite javascript framework so far. I used create-react-app just to get the basis folder structure.
+* **[Typescript](https://www.typescriptlang.org/)**: Really simple to use and to learn either if you know JS or not.
+* **[Material-ui](https://material-ui.com/)**: As I love tweaking my apps with CSS and native resources, I recomend this highly-customizable library to save time developing react apps.
+* **CSS**: Along with [SASS](https://sass-lang.com/) and [jss](https://cssinjs.org/), I believe the language used for styling will keep being the standard in web development.
+* **[snowpack](https://www.snowpack.dev/)**: An interesting alternative to webpack and other building tools. I used to configure webpack from scratch to generate the static web files needed, but in terms of dev experience I believe snowpack is better and still lets you customize your building processes as much as you want.
+* **gh-pages**: Currently I serve the webpage on github pages.
 
-**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" to your `snowpack.config.js` config file.
+## Initial setup
 
-### npm test
+### snowpack template
 
-Launches the application test runner.
-Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
+npm install --save-dev snowpack
+
+npx create-snowpack-app new-dir --template @snowpack/app-template-react-typescript
+
+### Additional steps
+
+That's it! If you need an specific version of typescript or are using some version of react *(I had some trouble using the new JSX syntax available since React 17.0.0)* with certain features you may need to add plugins to snowpack, which is pretty easy to use.
+
+
+*Made by Fabio. From Colombia, for the 🌍*

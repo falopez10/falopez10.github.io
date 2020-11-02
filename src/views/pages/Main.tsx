@@ -1,7 +1,7 @@
 import { Grid } from '@material-ui/core';
 import React, { FC, useContext } from 'react';
 import { labels } from '../../constants';
-import { DisplayContext } from '../../core/providers';
+import { DisplayContext } from '../../core/providers/DisplayContext';
 import { ExperienceContent, MainItem, SkillsContent } from '../components';
 import { EducationContent } from '../components/education/EducationContent';
 export const Main: FC = () => {

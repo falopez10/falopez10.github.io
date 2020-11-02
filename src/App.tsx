@@ -1,9 +1,9 @@
 import './App.css';
 import { DisplayWrapper } from './views/components';
 import { Main } from './views/pages/Main';
-import React from 'react';
+import React, { FC } from 'react';
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
       <DisplayWrapper>

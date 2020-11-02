@@ -9,8 +9,8 @@ import {
   TimelineOppositeContent,
   TimelineSeparator,
 } from '@material-ui/lab';
-import { DisplayContext } from '../../../core/providers';
-import { formatMonthCustom } from '../../../core/services';
+import { DisplayContext } from '../../../core/providers/DisplayContext';
+import { formatMonthCustom } from '../../../core/services/TimeService';
 import { labels } from '../../../constants';
 
 interface ExperienceItem {

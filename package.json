@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "snowpack dev --polyfill-node",
-    "build": "snowpack build",
+    "build": "snowpack build --polyfill-node",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --fix --ext .ts,.tsx"
@@ -11,7 +11,8 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "date-fns": "^2.16.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.4",

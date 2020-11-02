@@ -1,8 +1,8 @@
 import { createStyles, Grid, makeStyles } from '@material-ui/core';
 import React, { FC, useContext, useEffect, useState } from 'react';
 import { labels } from '../../../constants';
-import { DisplayContext } from '../../../core/providers';
-import { formatMonthCustom } from '../../../core/services';
+import { DisplayContext } from '../../../core/providers/DisplayContext';
+import { formatMonthCustom } from '../../../core/services/TimeService';
 
 interface EducationItem {
   id: string;
