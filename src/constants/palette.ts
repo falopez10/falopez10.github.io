@@ -3,7 +3,7 @@ import type { CSSProperties } from '@material-ui/styles';
 
 export const palette: PaletteOptions | { [field: string]: CSSProperties } = {
   primary: {
-    main: '#fed55f',
+    main: '#9b0707',
     contrastText: '#000',
   },
   secondary: {
