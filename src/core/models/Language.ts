@@ -1,11 +1,11 @@
-import { es, enUS } from 'date-fns/locale'
+import { es, enUS } from 'date-fns/locale';
 
 export enum Language {
-    EN = "en",
-    ES = "es",
+  EN = 'en',
+  ES = 'es',
 }
 
 export const dateFNSLocale: Record<Language, Locale> = {
-    [Language.EN]: enUS,
-    [Language.ES]: es,
-}
+  [Language.EN]: enUS,
+  [Language.ES]: es,
+};
