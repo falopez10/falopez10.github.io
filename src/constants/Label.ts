@@ -1,9 +1,12 @@
 import { Language } from '../core/models/Language';
+import { Url } from './Url';
 
 interface LabelMap {
   PRESENT: string;
 
   ABOUT_ME: string;
+  FABIO_LOPEZ: string;
+  FABIO_LOPEZ_DESCRIPTION: string;
 
   // EXPERIENCES
   EXPERIENCE: string;
@@ -34,6 +37,12 @@ interface LabelMap {
   SKILLS: string;
 
   PROJECTS: string;
+  INSTA_TAGS: string;
+  INSTA_TAGS_DESCRIPTION: string;
+  INFO_COL: string;
+  INFO_COL_DESCRIPTION: string;
+  BIOCICLE: string;
+  BIOCICLE_DESCRIPTION: string;
 
   INTERESTS: string;
   MUSIC_TITLE: string;
@@ -46,18 +55,28 @@ interface LabelMap {
 
 const intlLabels = {
   ALPINA: 'Alpina - productos alimenticios',
-  UNIANDES: 'Universidad de Los Andes',
+  BIOCICLE: 'BioCicle',
+  FABIO_LOPEZ: 'Fabio López',
+  INFO_COL: 'InfoCol',
+  INSTA_TAGS: 'InstaTags',
   JAVEANDINAS: 'Tutorias Javeandinas',
   LEAL: 'Leal Colombia S.A.S.',
   MENIU: 'Meniu Colombia S.A.S.',
   SAN_CARLOS: 'Colegio San Carlos',
+  UNIANDES: 'Universidad de Los Andes',
 };
 
+/**
+ * MarkDown is encouraged!
+ */
 export const labels: Record<Language, LabelMap> = {
   [Language.EN]: {
     ...intlLabels,
     PRESENT: 'Present',
     ABOUT_ME: 'About me',
+    FABIO_LOPEZ_DESCRIPTION: `I'm a Colombian systems engineer.
+    My interests around computer science go from architecture to front- end and back- end development.
+    I love to help other people and learn new technologies in the process`,
 
     EXPERIENCE: 'Experience',
 
@@ -93,20 +112,28 @@ export const labels: Record<Language, LabelMap> = {
     HIGH_SCHOOL_DEGREE: 'High school',
 
     SKILLS: 'Skills',
-    PROJECTS: 'Projects',
+
 
     INTERESTS: 'Interests',
     MUSIC_TITLE: 'Making music',
-    MUSIC_DESCRIPTION: 'Someone made the mistake to tell me how to mix and produce music in tools like Ableton. Since then I have made hilarious mixes and songs. They all are made with love.',
+    MUSIC_DESCRIPTION: 'Someone made the mistake to teach me how to mix and produce music in tools like Ableton. Since then I have made hilarious mixes and songs. They all are made with love.',
     PUZZLES_TITLE: 'Solving puzzles',
     PUZZLES_DESCRIPTION: 'I\'m not much of a gamer, but I do use to search for solving logic puzzles and riddles! ',
     BASKETBALL_TITLE: 'Playing Basketball',
     BASKETBALL_DESCRIPTION: 'In Colombia and in my family it\'s always weird being one of the few who doesn\'t really like football(soccer). I love watching the NBA and spending time failing hoops.',
+
+    PROJECTS: 'Projects',
+    INSTA_TAGS_DESCRIPTION: 'Find most frequent instagram #tags given your search term.',
+    INFO_COL_DESCRIPTION: 'A brief look into the Colombian presidential elections from 2018.',
+    BIOCICLE_DESCRIPTION: `For my undergrad Thesis I helped on the project of [BioCicle](${Url.BIOCICLE_LINK}). It's a visualization tool designed to help biologists and bioengineers in the clasiffication of species`,
   },
   [Language.ES]: {
     ...intlLabels,
     PRESENT: 'Presente',
     ABOUT_ME: 'Sobre mí',
+    FABIO_LOPEZ_DESCRIPTION: `Soy un ingeniero de sistemas Colombiano.
+    Mis intereses alrededor del desarrollo de software incluyen la arquitectura, y desarrollo de front y back end.
+    Me encanta ayudar a otras personas y aprender nuevas tecnologías en el proceso.`,
 
     EXPERIENCE: 'Experiencia',
 
@@ -141,7 +168,6 @@ export const labels: Record<Language, LabelMap> = {
     HIGH_SCHOOL_DEGREE: '',
 
     SKILLS: 'Habilidades',
-    PROJECTS: 'Proyectos',
 
     INTERESTS: 'Intereses',
     MUSIC_TITLE: 'Hacer música',
@@ -150,5 +176,10 @@ export const labels: Record<Language, LabelMap> = {
     PUZZLES_DESCRIPTION: 'En lugar de jugar muchos videojuegos, me interesa más resolver acertíjos y rompecabezas de lógica.',
     BASKETBALL_TITLE: 'Baloncesto',
     BASKETBALL_DESCRIPTION: 'En Colombia (y en mi familia) no es usual ser de los que no les gusta mucho el fútbol. Me encanta ver la NBA y pasar el tiempo fallando canastas.',
+
+    PROJECTS: 'Proyectos',
+    INSTA_TAGS_DESCRIPTION: 'Encuentra los tags de instagram más frecuentas según tu búsqueda.',
+    INFO_COL_DESCRIPTION: 'Una rápida mirada a las elecciones presidenciales de Colombia en el 2018',
+    BIOCICLE_DESCRIPTION: `Para mi proyecto de pregrado colaboré en el proyecto de [BioCicle](${Url.BIOCICLE_LINK}). Es una herramienta web de visualización diseñada para ayudar a biólogos e ingenieros a identificar y clasificar especies.`,
   },
 };

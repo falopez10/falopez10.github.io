@@ -11,7 +11,7 @@ import {
 } from '@material-ui/lab';
 import { DisplayContext } from '../../../core/providers/DisplayContext';
 import { formatMonthCustom } from '../../../core/services/TimeService';
-import { labels } from '../../../constants';
+import { labels } from '../../../constants/Label';
 
 interface ExperienceItem {
   id: string;

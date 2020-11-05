@@ -5,23 +5,25 @@ import {
 
   makeStyles
 } from '@material-ui/core';
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 
 interface Props {
-  title: string;
+  headerContent: ReactNode;
+  expanded: boolean;
+  onChange: (...args: any[]) => void;
 }
 
-export const MainItem: FC<Props> = ({ title, children }) => {
+export const MainItem: FC<Props> = ({ headerContent, expanded, onChange, children }) => {
   const classes = useStyles();
   return (
-    <Accordion>
+    <Accordion expanded={expanded} onChange={onChange}>
       <AccordionSummary
         classes={{
           root: classes.summary,
           expanded: classes.summary,
         }}
       >
-        <h3>{title}</h3>
+        {typeof headerContent === "string" ? <h3>{headerContent}</h3> : headerContent}
       </AccordionSummary>
       <AccordionDetails>{children}</AccordionDetails>
     </Accordion>

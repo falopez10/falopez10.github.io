@@ -1,6 +1,6 @@
 import { Language, TimeFormat, dateFNSLocale } from '../models';
 import { format, isSameDay } from 'date-fns';
-import { labels } from '../../constants';
+import { labels } from '../../constants/Label';
 
 export function formatTime(date: Date | number, time = true, onlyTime = false): string {
   const _format = time

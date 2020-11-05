@@ -1,6 +1,6 @@
 import { createStyles, Grid, makeStyles } from '@material-ui/core';
 import React, { FC, useContext, useEffect, useState } from 'react';
-import { labels } from '../../../constants';
+import { labels } from '../../../constants/Label';
 import { DisplayContext } from '../../../core/providers/DisplayContext';
 import { formatMonthCustom } from '../../../core/services/TimeService';
 

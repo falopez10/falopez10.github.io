@@ -1,7 +1,8 @@
-import React, { FC, Fragment, useContext, useEffect, useState } from 'react'
+import { Grid, Link } from '@material-ui/core';
+import React, { FC, Fragment, useContext, useEffect, useState } from 'react';
+import { Url } from '../../../constants/Url';
+import { labels } from '../../../constants/Label';
 import { DisplayContext } from '../../../core/providers/DisplayContext';
-import { labels, Url } from '../../../constants';
-import { Grid, Link, useTheme } from '@material-ui/core';
 
 interface Interest {
     title: string;
@@ -11,14 +12,13 @@ interface Interest {
 }
 
 export const InterestsContent: FC = () => {
-    const theme = useTheme();
     const { language } = useContext(DisplayContext);
     const [interests, setInterests] = useState<Interest[]>([]);
 
     useEffect(() => {
         const _labels = labels[language];
         setInterests([
-            { title: _labels.MUSIC_TITLE, description: _labels.MUSIC_DESCRIPTION, url: Url.ABLETON_LINK, imgUrl: Url.ABLETON },
+            { title: _labels.MUSIC_TITLE, description: _labels.MUSIC_DESCRIPTION, url: Url.SOUND_CLOUD_LINK, imgUrl: Url.ABLETON },
             { title: _labels.PUZZLES_TITLE, description: _labels.PUZZLES_DESCRIPTION, imgUrl: Url.PUZZLE },
             { title: _labels.BASKETBALL_TITLE, description: _labels.BASKETBALL_DESCRIPTION, imgUrl: Url.BASKETBALL },
         ]);
